@@ -1,0 +1,103 @@
+/*common*/
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+
+/*noticeList*/
+.listTable {
+    margin: 0 auto;
+    margin-top: 10%;
+    border-collapse: collapse;
+    border-color: #000;
+    
+}
+
+
+
+.listTable tr td:first-child,  .listTable tr:nth-child(2){
+    background-color: #fb4357;
+    color: #fff;
+    font-weight: bolder;
+    
+}
+
+.listTable tr:first-child td p {
+    text-align: center;
+    font-size: 2em;
+    margin: 1% 0;
+    position: relative;
+}
+
+.listTable tr:first-child td p button {
+    position: absolute;
+    right: 2%;
+    top: 20%;
+    background-color: #fff;
+    border-color: #000;
+    border-radius: 3px;
+    padding: 3px;
+    font-weight: bolder;
+}
+.listTable .subject {
+    margin-left: 10px;
+}
+.listTable a {
+    color: #000;
+    font-weight: bold;
+}
+
+.paging {
+    text-align: center;
+    
+    font-weight: bolder;
+    margin: 3%;
+    margin-bottom: 10%;
+}
+.pagingBA {
+    color: #fb4357;
+}
+
+.pagingNum {
+    color: #000;
+}
+
+
+/*Qtable*/
+.Qtable {
+    margin: 10% auto;
+    border-collapse: collapse;
+    border-color: #000;
+    
+}
+
+.Qtable caption {
+    text-align: center;
+    padding: 20px;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+.Qtable tr td:first-child {
+    background-color: #fb4357;
+    color: #fff;
+    font-weight: bolder;
+}
+
+.Qtable .clickBox {
+    background-color: #fff;
+    border-color: #000;
+    border-radius: 3px;
+    padding: 3px;
+    font-weight: bolder;
+}
+
+.Qtable input, .Qtable textarea{
+    padding: 1%;
+    margin: 1%;
+}
+
