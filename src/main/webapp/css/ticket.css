@@ -1,0 +1,176 @@
+
+
+li{
+  list-style: none;
+}
+
+.ticket{
+  position: relative;
+  height: 700px;  
+  background: linear-gradient(
+	    to top,
+	    rgba(255,255,255,0) 10%,
+	    rgba(255,255,255, 0.5) 25%,
+	    rgba(255,255,255,0.7) 50%,
+	    rgba(255,255,255,1) 75%,
+	    rgba(255,255,255,1) 100%
+	  ),
+	  url(../img/ticketBG2.jpg);
+	  background-repeat: no-repeat;
+	  background-size: cover;
+    background-position: bottom;
+}
+.ticket .inner{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  width: 100%;
+  margin : 30px 0;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tbl_con{
+  width: 90%;
+  height: 300px;
+  margin-right: 10px;
+  background-color: rgb(242, 240, 229);
+  text-align: center;
+  padding: 10px;
+  /* border-right: #999 2px solid; */
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, .15);
+}
+.tbl_con span{
+  background: linear-gradient(to right, #fb4357, orange);
+  display: block;
+  color: #ccc;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.tbl_con ul{
+  margin: 20px 0;
+  padding: 0;
+}
+.tbl_con ul li{
+  margin-bottom: 10px;
+}
+.tbl_con ul li>a{
+  /* background-color: red; */
+  display: block;
+  padding: 5px;
+  width: 100%;
+  color: #333;
+  transition: .2s;
+}
+.tbl_con ul li>a:hover{
+  background-color: #888;
+  border-radius: 10px;
+  color:#ccc;
+}
+.tbl_con ul li.target>a{
+  background-color: #888;
+  border-radius: 10px;
+  color:#ccc;
+}
+
+.movieListBtn, .movieSeatBtn{
+  margin: 10px 0 0 10px;
+  border : 2px solid ;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+
+/* goNEXT 아래 검은부분 */
+.goNext{
+  height: 140px;
+  width: 100%;
+  background: #333;
+  position: absolute;
+  left:0;
+  bottom: 0;
+  padding: 10px 0;
+}
+
+.goNext .inner{
+  border:none;
+  height: 120px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.goNext .inner .info{
+  width: 100%;
+  display: flex;
+}
+
+.goNext .inner .info .movie_poster img{
+  height: 90%;
+  margin: 5px 10px;
+}
+.goNext .inner .info .movie_title{
+  display: flex;
+  justify-content: center;
+  margin-left: 30px;
+  margin-top: 40px;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.goNext .inner .info .colspan{
+  padding: 40px 0 0 20px;
+}
+.goNext .inner .info.target{
+  flex-direction: column;
+  padding: 40px 0 0 20px;
+}
+
+.goNext .inner>div{
+  display: flex;
+}
+
+.goNext .inner>div>div{
+  height: 120px;
+  color: #999;
+  width: 100%;
+  border-right: #999 solid 2px;
+}
+.goNext .inner .info .date>.date,
+.goNext .inner .info .time,
+.goNext .inner .info .screen>.screen{
+  color:#999;
+}
+
+.goNext .inner .btn_con{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  border : none;
+}
+
+.goNext .inner .btn_con a{
+  background-color: rgb(191, 40, 40);
+  border-color: rgb(215, 50, 50);
+  color : white;
+  padding: 10px 10px;
+  text-align: center;
+}
+.goNext .inner .btn_con a i{
+  font-size: 3rem;
+}
+.path_step1{
+  font-size: 2rem;
+}

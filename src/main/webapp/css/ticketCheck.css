@@ -1,0 +1,97 @@
+
+.ticketWrap{
+    width: 980px;
+    height: 650px;
+    margin: 0 auto;
+    background-color: #F6F6F6;
+    margin-top: 50px;
+    margin-bottom: 50px
+}
+.ticketWrap h2{
+    text-align: center;
+    background-color: #fb4357;
+    color: #fff;
+    margin-bottom: 50px;
+
+}
+
+.ticket{
+    width: 600px;
+    height: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap
+
+}
+
+
+.ticketImg{
+    width: 250px;
+    height: 300px;
+}
+
+.ticketImg img{
+    width: 250px;
+    height: 300px;
+}
+
+
+.main p{
+    margin-left: 50px;
+    margin-bottom: 25px;
+    display: inline-block;
+    width: 100px;
+    font-weight: bold;
+}
+
+.main span{
+    font-weight: bold;
+}
+
+.btn{
+    text-align: center;
+}
+
+.btn button{
+    text-align: center;
+    margin-top: 50px;
+    width: 200px;
+    padding: 10px 25px;
+    border: none;
+    font-weight: bold;
+    background-color: #fb4357;
+    color: #fff;
+    font-size: 1.1em;
+    border-radius: 10px;
+}
+
+.btn a:link{ /*링크 방문 전 글꼴*/
+    color: #fff;
+    text-decoration: none;
+}
+.btn a:visited{ /*링크 방문 후 글꼴*/
+    color: #fff;
+    text-decoration: none;
+}
+.line{
+    width: 650px;
+    border-top: 1px solid #ccc;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.note{
+    margin-left: 20%;
+    margin-top: 20px;
+    display: flex;
+    
+}
+.content{
+    margin-left: 50px;
+    color: #5D5D5D;
+    font-size: 0.9em;
+}
+
+
+
+

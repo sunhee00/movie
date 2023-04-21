@@ -1,0 +1,87 @@
+.container .inner {
+  display: flex;
+  justify-content: center;
+}
+
+.findForm_container {
+  padding: 0;
+  margin: 50px 0;
+  width: 50%;
+  height: 380px;
+}
+.findForm_container .find_index {
+  display: flex;
+}
+.findForm_container .find_index p {
+  margin: 0;
+  padding: 5px 10px;
+  border: 2px solid rgb(160, 160, 160);
+  border-bottom: none;
+  border-radius: 15px 15px 0 0;
+}
+.findForm_container .find_index p a {
+  color: black;
+}
+
+.findForm_container form {
+  position: absolute;
+  width: 50%;
+  height: 330px;
+  border-top: 3px solid rgb(160, 160, 160);
+  border-bottom: 3px solid rgb(160, 160, 160);
+  background-color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.findForm_container form h2 {
+  margin-bottom: 15px;
+  margin-top: 25px;
+}
+.findForm_container form input {
+  margin: 7px 0;
+  padding: 0 10px;
+  height: 40px;
+  width: 300px;
+}
+
+.findForm_container form .btn_find {
+  width: 300px;
+  height: 40px;
+  margin-bottom: 20px;
+  font-size: 1.1em;
+  border-radius: 4px;
+  border: none;
+  background-color: #fb4357;
+  color: white;
+  font-weight: bold;
+  /*background-color: rgb(190, 190, 190);*/
+  outline: 0px;
+  cursor: pointer;
+}
+.findForm_container #findIdForm {
+  z-index: 1;
+}
+.findForm_container form:target{
+  z-index: 2;
+}
+.findForm_container .find_index .target{
+  background-color: #fb4357;
+  border: none;
+}
+.findForm_container .find_index .target a{
+  color: white;
+}
+.findForm_container .found {
+  margin-top: 30px;
+}
+.findForm_container .found h2 {
+  margin-top: 40px;
+}
+.findForm_container .found p {
+  margin: 50px;
+}
+.findForm_container .found .btn_find {
+  width: 250px;
+}

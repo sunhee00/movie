@@ -1,0 +1,33 @@
+.container .inner {
+  display: flex;
+  justify-content: center;
+}
+.main_container {
+  padding: 40px;
+  padding-bottom: 50px;
+  margin: 50px 0;
+  border-top: 3px solid rgb(160, 160, 160);
+  border-bottom: 3px solid rgb(160, 160, 160);
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main_container h3,
+.main_container .alert {
+  margin-bottom: 20px;
+}
+.main_container .alert p {
+  margin-bottom: 3px;
+}
+.main_container .btn_cfm {
+  padding: 0 10px;
+  height: 30px;
+  width: 250px;
+  border: none;
+  font-size: 1em;
+  font-weight: bold;
+  color: white;
+  background-color: #fb4357;
+  cursor: pointer;
+}

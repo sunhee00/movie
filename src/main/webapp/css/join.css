@@ -1,0 +1,80 @@
+.container .inner {
+    display: flex;
+    justify-content: center;
+}
+.join_container {
+  padding: 20px 0;
+  margin: 50px 0;
+  border-top: 3px solid rgb(160, 160, 160);
+  border-bottom: 3px solid rgb(160, 160, 160);
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background:rgba(255,255,255,.7);
+}
+.join_container .join_title,
+#joinForm{
+  margin: 5px 10px;
+  width: 80%;
+  padding: 5px 0;
+}
+.join_container .join_title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+#joinForm {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#joinForm .joinForm_table .input_label {
+  padding-left: 5px;
+  width: 120px;
+  text-align: left;
+  margin-right: 15px;
+}
+/*
+#joinForm .joinForm_table {
+  width: 100%;
+}*/
+#joinForm .joinForm_table input {
+  margin: 5px 2px;
+  padding: 0 10px;
+  height: 30px;
+  width: 220px;
+  color: rgb(79, 79, 79);
+}
+#joinForm .joinForm_table #btnIdChk {
+  background-color: rgb(230, 230, 230);
+  border-radius: 5px;
+  border: none;
+  padding: 0;
+  margin-left: 5px;
+  font-size: 0.8em;
+  color: rgb(79, 79, 79);
+  width: 80px;
+  cursor: pointer;
+}
+#joinForm .btnJoinForm input {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 250px;
+  height: 40px;
+  font-size: 1.3em;
+  font-weight: bold;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  background-color: #fb4357;
+  outline: 0px;
+  cursor: pointer;
+}
+#joinForm .joinForm_table #btnIdChk:hover{
+  border: 2px solid rgb(160, 160, 160);
+}
+/*
+#joinForm .btnJoinForm input:hover {
+  background-color: rgb(220, 220, 220);
+}*/

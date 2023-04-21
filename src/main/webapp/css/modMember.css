@@ -1,0 +1,64 @@
+.container .inner {
+  display: flex;
+  justify-content: center;
+}
+.mod_container {
+padding: 20px 0;
+margin: 50px 0;
+border: 1px solid rgb(160, 160, 160);
+
+width: 45%;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.mod_container .mod_title,
+#modForm{
+margin: 10px;
+width: 80%;
+padding: 5px 0;
+}
+.mod_container .mod_title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.mod_container #modForm {
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.mod_container .modForm_table .input_label {
+padding-left: 5px;
+width: 120px;
+text-align: left;
+margin-right: 10px;
+}
+/*
+#joinForm .joinForm_table {
+width: 100%;
+}*/
+
+.mod_container .modForm_table input {
+margin: 5px 2px;
+padding: 0 10px;
+height: 30px;
+width: 220px;
+color: rgb(79, 79, 79);
+}
+.mod_container .btnModForm {
+  text-align: center;
+}
+.mod_container .btnModForm input {
+width: 120px;
+height: 30px;
+cursor: pointer;
+margin: 20px 10px;
+background-color: rgb(230, 230, 230);
+border-radius: 5px;
+border: none;
+}
+.mod_container .btnModForm input:hover {
+  background-color: rgb(220, 220, 220);
+}
+

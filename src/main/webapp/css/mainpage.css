@@ -1,0 +1,527 @@
+/* 유튜브영역 */
+.youtubebox{
+  height: 500px;
+  background-color: black;
+  color: white;
+}
+.youtubebox .inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 500px;
+  overflow: hidden;
+}
+.youtubebox .inner .youtubeplayer{
+  /* width: 1100px; */
+  width: 100%;
+  height: 550px;
+  position: absolute;
+  left: 50%;
+  margin-left: calc(1100px / -2);
+  margin-top: 30px;
+}
+.youtubebox .inner .textBox{
+  /* border:1px solid red; */
+  z-index: 1;
+}
+.youtubebox .inner .textBox .title{
+  margin-bottom: 10px;
+}
+.youtubebox .inner .textBox .movie_info{
+  margin-bottom: 10px;
+}
+.youtubebox .inner .textBox .btn_box{
+  /* border : 1px solid green; */
+}
+.youtubebox .inner .textBox .btn_box a{
+  background-color: white;
+  padding: 2px 18px;
+  border-radius: 10px;
+  color : black;
+}
+
+/* 무비차트 영역 */
+.moviechart{
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(232, 232, 232, 0.37));
+}
+.moviechart .inner{
+  padding: 50px 30px 60px;
+}
+
+.moviechart .inner .movieChartBeScreen_btn_wrap{
+  display: flex;
+  justify-content: space-between;
+}
+.moviechart .inner .movieChartBeScreen_btn_wrap .movieChartBeScreen{
+  display: flex;
+}
+.moviechart .inner .movieChartBeScreen_btn_wrap .movieChartBeScreen .movieChartBeScreen>div:first-child::after{
+  content: '';
+  width: 1px;
+  height: 20px;
+  background-color: #000;
+  position: absolute;
+  /* top: -35px; */
+  bottom: 0;
+  margin: auto;
+}
+
+.moviechart .inner .movieChartBeScreen_btn_wrap .movieChartBeScreen a{
+  margin:0 8px 0;
+  font-size: 1.5em;
+  color: #888;
+  font-weight: 700;
+}
+.moviechart .inner .movieChartBeScreen_btn_wrap .movieChartBeScreen>div:first-child>a{
+  color:black;
+}
+
+.moviechart .inner .movieChartBeScreen_btn_wrap .btn_wrap{
+  display: flex;
+  align-items: center;
+}
+
+.moviechart .inner .movieChartBeScreen_btn_wrap .btn_wrap a{
+  /* background-color: red; */
+  padding: 2px 8px;
+  border-radius: 10px;
+  border: 1px solid #c8c8c8;
+  color : black;
+}
+
+.moviechart .inner .movie_slide{
+  margin-top: 10px;
+  display: flex;
+}
+
+.moviechart .inner .movie_slide .movie_con{
+  width: 190px;
+  height: 295px;
+  margin-right: 20px;
+}
+
+.moviechart .inner .movie_slide .movie_con .movie_img{
+  width: 170px;
+  height: 234px;
+  position: relative;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .3s;
+}
+.moviechart .inner .movie_slide .movie_con:nth-child(1) .movie_img{
+  background-image: url(../img/001.jpg);
+}
+.moviechart .inner .movie_slide .movie_con:nth-child(2) .movie_img{
+  background-image: url(../img/002.jpg);
+}
+.moviechart .inner .movie_slide .movie_con:nth-child(3) .movie_img{
+  background-image: url(../img/blackadam.jpg);
+}
+.moviechart .inner .movie_slide .movie_con:nth-child(4) .movie_img{
+  background-image: url(../img/evry.jpg);
+}
+.moviechart .inner .movie_slide .movie_con:nth-child(5) .movie_img{
+  background-image: url(../img/highpass.jpg);
+}
+
+.moviechart .inner .movie_slide .movie_con .movie_img .movie_num{
+  position : absolute;
+  bottom: 3px;
+  left: 3px;
+  font-size: 3em;
+  color : white;
+  font-weight: 700;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style : italic;
+}
+
+.moviechart .inner .movie_slide .movie_con .movie_img .btn_con{
+  
+  display: flex;
+  flex-direction: column;
+  
+}
+.moviechart .inner .movie_slide .movie_con .movie_img .btn_con a{
+  background-color: green;
+  padding: 5px 30px;
+  border-radius: 10px;
+  margin-top: 10px;
+  display: none;
+  z-index: 1;
+  transition: .3s;
+  font-weight: 600;
+}
+.moviechart .inner .movie_slide .movie_con .movie_img:hover{
+  transform: scale(1.2) translate(10px, 10px);
+  border-radius: 10px;
+}
+.moviechart .inner .movie_slide .movie_con .movie_img:hover .btn_con a{
+  display: block;
+}
+.moviechart .inner .movie_slide .movie_con .movie_img .btn_con a:hover{
+  transform: scale(1.1);
+  opacity: .8;
+}
+.moviechart .inner .movie_slide .movie_con .movie_img .btn_con a:nth-child(1){
+  background-color: #fff;
+  color:black;
+}
+.moviechart .inner .movie_slide .movie_con .movie_img .btn_con a:nth-child(2){
+  background-color: #fb4357;
+  color:white;
+}
+
+.moviechart .inner .movie_slide .movie_con .movie_title{
+  width: 170px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.3em;
+  margin-top: 10px;
+  
+}
+
+.event{
+}
+
+/* 이벤트 영역 */
+.event .inner{
+  padding: 60px 0 6px;
+  height: 100%;
+  position: relative;
+}
+.event .inner .iventScrint_btn_wrap{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 10px;
+}
+.event .inner .iventScrint_btn_wrap .eventTitle{
+  margin:0 8px 0;
+  font-size: 1.5em;
+  color: #000;
+  font-weight: 700;
+}
+.event .inner .iventScrint_btn_wrap .btn_con{
+  display: flex;
+  align-items: center;
+}
+.event .inner .iventScrint_btn_wrap .btn_con a{
+  
+  /* background-color: red; */
+  padding: 2px 8px;
+  border-radius: 10px;
+  border: 1px solid #c8c8c8;
+  color : black;
+}
+
+
+.event .inner .swiper {
+  width: 1040px;
+  height: 100%;
+}
+
+.event .inner .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 40px;
+  border: 1px solid #c8c8c8;
+}
+.event .inner .swiper-slide .img_box{
+  display: block;
+  width: 100%;
+  height: 207px;
+  transition: .3s;
+  background-size: cover;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.event .inner .swiper-slide .img_box:hover{
+  transform: scale(1.1);
+}
+.event .inner .swiper-slide .img_box.img1{
+  background-image: url(../img/event01.jpg);
+}
+.event .inner .swiper-slide .img_box.img2{
+  background-image: url(../img/event02.jpg);
+}
+.event .inner .swiper-slide .img_box.img3{
+  background-image: url(../img/event03.jpg);
+}
+.event .inner .swiper-slide .img_box.img4{
+  background-image: url(../img/event04.jpg);
+}
+.event .inner .swiper-slide .img_box.img5{
+  background-image: url(../img/event05.jpg);
+}
+.event .inner .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.event .inner .event_text .event_title{
+  font-weight: 700;
+}
+.event .inner .event_text .event_day{
+  font-size: .9em;
+  color:#666;
+  margin-bottom: 10px;
+}
+/* gift_card영역 */
+.gift_card .inner{
+  padding: 30px 10px 0;
+  display: flex;
+}
+.gift_card .inner>div{
+  width: 100%;
+  height: 360px;
+  padding: 30px 19px 30px;
+}
+.gift_card .inner .container{
+  width: 100%;
+  height: 100%;
+  border : 1px solid #c8c8c8;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 5px 20px;
+}
+.gift_card .inner .container .title_btn_con{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.gift_card .inner .container .title_btn_con .title{
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.gift_card .inner .container .title_btn_con .btn{
+  border: 1px solid #c6c6c6;
+  background: #e6e6e6;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.gift_card .inner .container .title_btn_con .btn a{
+  padding: 1px 10px;
+  color : #666;
+  font-size: .7em;
+}
+.gift_card .inner .container .item{
+  height: 80px;
+  display: flex;
+  margin-bottom: -10px;
+}
+.gift_card .inner .container .item .img_box{
+  width: 80px;
+  background-size: cover;
+}
+.gift_card .inner .movie_voucher .container .item.item1 .img_box{
+  background-image: url(../img/voucher01.jpg);
+}
+.gift_card .inner .movie_voucher .container .item.item2 .img_box{
+  background-image: url(../img/voucher02.jpg);
+}
+.gift_card .inner .movie_voucher .container .item.item3 .img_box{
+  background-image: url(../img/voucher03.jpg);
+}
+
+.gift_card .inner .gift_card .container .item.item1 .img_box{
+  background-image: url(../img/giftcard01.jpg);
+}
+.gift_card .inner .gift_card .container .item.item2 .img_box{
+  background-image: url(../img/giftcard02.jpg);
+}
+.gift_card .inner .gift_card .container .item.item3 .img_box{
+  background-image: url(../img/giftcard03.jpg);
+}
+
+.gift_card .inner .drink .container .item.item1 .img_box{
+  background-image: url(../img/drink01.jpg);
+}
+
+.gift_card .inner .drink .container .item.item2 .img_box{
+  background-image: url(../img/drink02.jpg);
+}
+.gift_card .inner .drink .container .item.item3 .img_box{
+  background-image: url(../img/drink03.jpg);
+}
+
+
+.gift_card .inner .container .item .text_box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color:#000;
+  font-weight: 500;
+}
+/* NOTICE & QNA 존  */
+.notice_QNA .inner{
+  padding: 30px 30px 120px;
+  height: 388px;
+  display: flex;
+  justify-content: space-between;
+}
+.notice_QNA .inner .notice_QNA_APP_wrap{
+  width: 740px;
+  border: 1px solid #c8c8c8;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.notice_QNA .inner .notice_QNA_APP_wrap .notice_QNA{
+  width: 514px;
+  height: 100%;
+  border-right: 1px solid #c8c8c8;
+  padding: 5px 20px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.notice_QNA .inner .notice_QNA_APP_wrap .notice_QNA .notice,
+.notice_QNA .inner .notice_QNA_APP_wrap .notice_QNA .QNA{
+  display: flex;
+  border-bottom: 1px solid #c8c8c8;
+  padding: 20px 0;
+}
+
+.notice_QNA .inner .notice_QNA_APP_wrap .notice_QNA>div .title{
+  width: 80px;
+  font-weight: 700;
+}
+
+.notice_QNA .inner .notice_QNA_APP_wrap .notice_QNA>div .dec{
+  width: 320px;
+}
+.notice_QNA .inner .notice_QNA_APP_wrap .QNA .dec p{
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.notice_QNA .inner .notice_QNA_APP_wrap .btn a{
+  border: 1px solid #c6c6c6;
+  background: #e6e6e6;
+  padding: 3px 10px;
+  border-radius: 5px;
+  color : #666;
+  font-size: .7em;
+  margin-right: 10px;
+}
+.notice_QNA .inner .notice_QNA_APP_wrap .notice_QNA>.btn{
+  margin-top: 10px;
+}
+
+.notice_QNA .inner .notice_QNA_APP_wrap .APP{
+  width: 226px;
+  padding: 25px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.notice_QNA .inner .notice_QNA_APP_wrap .APP .title{
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.notice_QNA .inner .notice_QNA_APP_wrap .APP .dec{
+  text-align: center;
+  font-size: .7em;
+  color : #666
+}
+
+.notice_QNA .inner .notice_QNA_APP_wrap .APP .QR{
+  margin: 20px 0;
+}
+.notice_QNA .inner .notice_QNA_APP_wrap .APP .QR img{
+  width: 76px;
+}
+
+.notice_QNA .inner .notice_slide{
+  width: 250px;
+  border-radius: 5px;
+  position: relative;
+}
+
+
+.notice_QNA .inner .notice_slide .swiper {
+  width: 200px;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -100px;
+  margin-top: -120px;
+}
+
+.notice_QNA .inner .notice_slide .swiper-slide { 
+  background-position: center;
+  background-size: cover;
+}
+
+.notice_QNA .inner .notice_slide .swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+/* 우리카드 노란색#FFA443 */
+.uricard{
+  background-color: #ffa443;
+  height: 205px;
+  margin-top: 50px;
+}
+.uricard .inner{
+  position: relative;
+}
+.uricard .inner img{
+  position: absolute;
+  bottom: -205px;
+}
+
+/* 예매하기 */
+#to-ticket{
+  height: 62px;
+  font-size: 20px;
+  padding: 0 30px;
+  background: linear-gradient(to right, #fb4357, orange);
+  border-radius: 30px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 30px;
+  right: 200px;
+  z-index: 9;
+  transition: .3s;
+} 
+#to-ticket a{
+  color:white;
+}
+#to-ticket:hover{
+  height: 70px;
+  font-size: 34px;
+} 

@@ -1,0 +1,35 @@
+.container .inner {
+  display: flex;
+  justify-content: center;
+}
+.main_container {
+  padding: 40px;
+  padding-bottom: 50px;
+  margin: 50px 0;
+  border-top: 3px solid rgb(160, 160, 160);
+  border-bottom: 3px solid rgb(160, 160, 160);
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main_container .modMember {
+  margin: 10px 0;
+  background-color: rgb(230, 230, 230);
+  padding: 5px 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  width: 250px;
+}
+.main_container .chk p {
+  display: block;
+  background-color: rgb(230, 230, 230);
+  padding: 5px 15px;
+  margin: 10px 20px;
+  border-radius: 5px;
+  width: 250px;
+}
+.main_container .chk a {
+  color: black;
+}
+

@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+.chartWrap{
+    width: 980px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.headTilte{
+    width: 820px;
+    margin-left: 80px;
+    border-bottom: 3px solid;
+    font-size: 1.5em;
+}
+
+.chartBox{
+    width: 980px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.chartBox div{
+    width: 240px;
+    height: 456px;
+    margin: 50px 25px;
+}
+
+.chartBox div h3{
+    background-color: #FF5A5A;;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.chartBox div h4{
+    margin-top: 10px;
+}
+
+.chartBox div img{
+    width: 240px;
+    height: 340px;
+}
+
+.chartBox div p{
+    font-size: 0.8em;
+    line-height: 150%;
+    color: #747474;
+    font-weight: bold;
+
+}
+
+.chartBox div input{
+    padding: 5px 20px;
+    border: none;
+    font-weight: bold;
+    background-color: #FF5A5A;
+    color: #fff;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.chartBox div input:hover{
+    cursor: pointer;
+}

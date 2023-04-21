@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>예매하기</title>
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/ticket.css">
+
+
+  <!-- BOXICONE -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  
+  <!-- JSCODE -->
+  <script src="./js/ticket.js" defer></script>
+</head>
+<body>
+  <div class="inner">
+    <div class="memInfo">
+      <input type="button" value="로그아웃" class="memInfobtn">
+      <input type="button" value="마이페이지" class="memPagebtn">
+    </div>
+    
+    <div class="title">
+      <span class="title_left">예매</span>
+      <span class="title_img"><i class='bx bx-camera-movie'></i></span>
+      <span class="title_right">영화정보</span>
+    </div>
+
+    <!-- 검색창 -->
+    <div class="search">
+      <form action="#">
+        <span class="movie_serch">영화찾기</span>
+        <input type="text" name="movieSearch" id="movieSearch">
+        <button><i class='bx bx-search-alt-2'></i></button>
+      </form>
+    </div>
+
+    <!-- 콘테이너 -->
+    <div class="container">
+      <div class="movie_tbl tbl_con">
+        <span class="">영화선택</span>
+        <ul>
+          <li><a href="#">리멤버</a></li>
+          <li><a href="#">자백</a></li>
+        </ul>
+      </div>
+      
+      <div class="day_tbl tbl_con">
+        <span class="">날짜선택</span>
+        <ul class="movie1 day1">
+          <li class="day1"><a href="#">1일</a></li>
+          <li class="day2"><a href="#">2일</a></li>
+          <li class="day3"><a href="#">3일</a></li>
+        </ul>
+      </div>
+
+      <div class="screen_tbl tbl_con">
+        <span class="">상영관선택</span>
+        <ul class="movie1 day1 screen">
+          <li class="screen1"><a href="#">1관</a></li>
+          <li class="screen2"><a href="#">2관</a></li>
+        </ul>
+      </div>
+
+      <div class="time_tbl tbl_con">
+        <span class="">시간선택</span>
+        <ul class="movie1 day1 time1">
+          <li><a href="#">12:00</a></li>
+          <li><a href="#">16:00</a></li>
+          <li><a href="#">20:00</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="btn_con">
+      <a class="movieListBtn" href="./movieList.html">영화리스트</a>
+      <a href="./movieSeat.html" class="movieSeatBtn">좌석선택하기</a>
+    </div>
+  </div>
+  
+  <div class="goNext">
+    <div class="inner">
+      <div class="info">
+        <div class="info movie">
+          <span class="movie_poster">
+            <!-- <img src="./image/001.jpg" alt="리멤버"> -->
+          </span>
+          <div class="row movie_title">
+            <span></span>
+          </div>
+        </div>
+        <div class="target info">
+          <div class="row date">
+            <span>일시</span>
+            <span class="date"></span>
+            <span class="time"></span>
+          </div>
+          <div class="row screen">
+            <span>상영관</span>
+            <span class="screen"></span>
+          </div>
+        </div>
+        <div class="row colspan">
+          <span class="path_step1">>좌석선택</span>
+          <span class="path_step2">>결제</span>
+        </div>
+      </div>
+
+
+      <form action="#">
+        <input type="hidden" name="movie_title" id="movie_title">
+        <input type="hidden" name="date" id="date">
+        <input type="hidden" name="time" id="time">
+        <input type="hidden" name="screen" id="screen">
+        <input type="submit" value="좌석선택">
+      </form>
+    </div>
+    
+  </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+.container .inner {
+  display: flex;
+  justify-content: center;
+}
+.manage_container h2 {
+  margin: 30px 0;
+}
+.manage_container table {
+  margin: 30px 0;
+  margin-bottom: 50px;
+  border-collapse: collapse;
+}
+.manage_container table,
+.manage_container table th,
+.manage_container table td {
+  text-align: center;
+  border: 1px solid #000;
+}
+.manage_container table th {
+  font-weight: bold;
+  background-color: #ebebeb;
+}
+.manage_container table th,
+.manage_container table td {
+  padding: 5px 20px;
+}
